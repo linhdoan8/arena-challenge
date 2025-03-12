@@ -49,3 +49,95 @@ Top-performing teams will be awarded **prize money** in recognition of their inn
 - Benchmark your navigation solutions against the best in the field.
 - Gain exposure and feedback from experts and industry leaders.
 - Contribute to advancing social navigation research and real-world applications.
+
+## 📝 Competition Rules
+
+Participants in the **Arena Challenge 2024** are required to develop autonomous navigation systems capable of effectively operating in dynamic, crowded, and collaborative environments. The primary objective is to navigate a standardized robot from a predefined start location to a goal location as efficiently and safely as possible, adhering to the following rules:
+
+1. **Robot Specifications**:
+   - **Platform**: Clearpath Jackal robot equipped with:
+     - **Perception**: 2D LiDAR with a 270° field of view.
+     - **Actuation**: Differential drive system with a maximum speed of 2 m/s.
+     - **Computation**: Onboard computing resources provided by the organizers.
+
+2. **Environment**:
+   - **Dynamic Obstacles**: Environments will include moving pedestrians and dynamic obstacles exhibiting various motion profiles to simulate real-world social scenarios.
+   - **Variability**: Environments will vary in complexity, from moderately crowded spaces to highly dynamic and dense crowds.
+
+3. **Task**:
+   - Develop a navigation system that processes LiDAR input and outputs motion commands to drive the robot from the start to the goal location without collisions.
+
+4. **Approaches**:
+   - Participants may employ any method, including classical planning algorithms, machine learning techniques, or hybrid approaches.
+
+5. **Simulation and Physical Trials**:
+   - The competition consists of both simulated environments and physical trials at the conference venue.
+   - Performance in simulation will determine eligibility for the physical trials.
+
+## 📊 Calculation of Metrics and Points
+
+Performance evaluation will be based on the following metrics:
+
+1. **Completion Time (\( T \))**:
+   - The time taken by the robot to navigate from the start to the goal location.
+
+2. **Collision Penalty (\( P \))**:
+   - A penalty incurred for each collision with dynamic obstacles or pedestrians.
+   - Defined as:
+     \[
+     P = N_c \times p
+     \]
+     Where:
+     - \( N_c \) = Number of collisions.
+     - \( p \) = Penalty per collision (a constant value determined by the organizers).
+
+3. **Social Compliance Score (\( S \))**:
+   - A score reflecting the robot's adherence to social norms, such as maintaining appropriate distances from pedestrians and avoiding abrupt movements.
+   - This score will be evaluated based on predefined criteria and may range between 0 (non-compliant) to 1 (fully compliant).
+
+The overall performance score (\( \text{Score} \)) is calculated as:
+
+\[
+\text{Score} = \frac{1}{T + P} \times S
+\]
+
+Where:
+- \( T \) = Completion time.
+- \( P \) = Total collision penalty.
+- \( S \) = Social compliance score.
+
+**Note**: A higher score indicates better performance, balancing efficiency, safety, and social compliance.
+
+
+## 🏅 Leaderboard: Arena Challenge 2024
+
+The leaderboard ranks participating teams based on their overall performance scores, considering completion time, collision penalties, and social compliance.
+
+| **Rank** | **Team Name** | **Completion Time (s)** | **Collision Penalty** | **Social Compliance Score** | **Final Score** |
+|----------|--------------|-------------------------|-----------------------|----------------------------|-----------------|
+| 1        | Team Alpha   | 120.5                   | 2.0                   | 0.95                       | 0.0076          |
+| 2        | RoboNav      | 135.2                   | 1.5                   | 0.90                       | 0.0065          |
+| 3        | NavAI        | 140.8                   | 3.0                   | 0.92                       | 0.0063          |
+| 4        | PathFinders  | 150.0                   | 4.0                   | 0.88                       | 0.0055          |
+| 5        | SocialBot    | 160.3                   | 2.5                   | 0.85                       | 0.0052          |
+| ...      | ...          | ...                     | ...                   | ...                        | ...             |
+
+### 📊 Score Calculation Formula
+\[
+\text{Final Score} = \frac{1}{T + P} \times S
+\]
+Where:  
+- \( T \) = Completion Time (in seconds)  
+- \( P \) = Collision Penalty  
+- \( S \) = Social Compliance Score (between 0 and 1)  
+
+### 🛠️ How to Interpret the Scores
+- **Higher scores** indicate better navigation performance, accounting for efficiency, safety, and social awareness.  
+- **Collision Penalties**: Every collision incurs a predefined penalty, increasing the total score denominator.  
+- **Social Compliance**: Robots that adhere to social norms and safe navigation behaviors receive higher scores.
+
+---
+
+**Note**: The leaderboard will be **continuously updated** as teams submit and improve their solutions.
+
+
