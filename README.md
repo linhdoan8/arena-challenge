@@ -74,39 +74,71 @@ Participants in the **Arena Challenge 2024** are required to develop autonomous 
    - The competition consists of both simulated environments and physical trials at the conference venue.
    - Performance in simulation will determine eligibility for the physical trials.
 
+## 📝 Competition Rules
+
+Participants in the **Arena Challenge 2024** are required to develop autonomous navigation systems capable of effectively operating in dynamic, crowded, and collaborative environments. The primary objective is to navigate a standardized robot from a predefined start location to a goal location as efficiently and safely as possible, adhering to the following rules:
+
+1. **Robot Specifications**:
+   - **Platform**: Clearpath Jackal robot equipped with:
+     - **Perception**: 2D LiDAR with a 270° field of view.
+     - **Actuation**: Differential drive system with a maximum speed of 2 m/s.
+     - **Computation**: Onboard computing resources provided by the organizers.
+
+2. **Environment**:
+   - **Dynamic Obstacles**: Environments will include moving pedestrians and dynamic obstacles exhibiting various motion profiles to simulate real-world social scenarios.
+   - **Variability**: Environments will vary in complexity, from moderately crowded spaces to highly dynamic and dense crowds.
+
+3. **Task**:
+   - Develop a navigation system that processes LiDAR input and outputs motion commands to drive the robot from the start to the goal location without collisions.
+
+4. **Approaches**:
+   - Participants may employ any method, including classical planning algorithms, machine learning techniques, or hybrid approaches.
+
+5. **Simulation and Physical Trials**:
+   - The competition consists of both simulated environments and physical trials at the conference venue.
+   - Performance in simulation will determine eligibility for the physical trials.
+
+---
+
 ## 📊 Calculation of Metrics and Points
 
 Performance evaluation will be based on the following metrics:
 
-1. **Completion Time (\( T \))**:
-   - The time taken by the robot to navigate from the start to the goal location.
+### 1. Completion Time ( \( T \) )
+- The time taken by the robot to navigate from the start to the goal location.
 
-2. **Collision Penalty (\( P \))**:
-   - A penalty incurred for each collision with dynamic obstacles or pedestrians.
-   - Defined as:
-     \[
-     P = N_c \times p
-     \]
-     Where:
-     - \( N_c \) = Number of collisions.
-     - \( p \) = Penalty per collision (a constant value determined by the organizers).
+### 2. Collision Penalty ( \( P \) )
+- A penalty incurred for each collision with dynamic obstacles or pedestrians, calculated as:
 
-3. **Social Compliance Score (\( S \))**:
-   - A score reflecting the robot's adherence to social norms, such as maintaining appropriate distances from pedestrians and avoiding abrupt movements.
-   - This score will be evaluated based on predefined criteria and may range between 0 (non-compliant) to 1 (fully compliant).
+$$
+P = N_c \times p
+$$
 
-The overall performance score (\( \text{Score} \)) is calculated as:
+Where:  
+- \( N_c \) = Number of collisions  
+- \( p \) = Penalty per collision (a constant value determined by the organizers)
 
-\[
+### 3. Social Compliance Score ( \( S \) )
+- A score reflecting the robot's adherence to social norms, such as maintaining appropriate distances from pedestrians and avoiding abrupt movements.  
+- This score ranges between **0** (non-compliant) and **1** (fully compliant).
+
+---
+
+### 🚀 Overall Performance Score
+
+The overall performance score is calculated as follows:
+
+$$
 \text{Score} = \frac{1}{T + P} \times S
-\]
+$$
 
-Where:
-- \( T \) = Completion time.
-- \( P \) = Total collision penalty.
-- \( S \) = Social compliance score.
+Where:  
+- \( T \) = Completion time (in seconds)  
+- \( P \) = Total collision penalty  
+- \( S \) = Social compliance score  
 
-**Note**: A higher score indicates better performance, balancing efficiency, safety, and social compliance.
+> **Note**: A **higher score** indicates better performance, balancing efficiency, safety, and social compliance.
+
 
 
 ## 🏅 Leaderboard: Arena Challenge 2024
@@ -140,4 +172,26 @@ Where:
 
 **Note**: The leaderboard will be **continuously updated** as teams submit and improve their solutions.
 
+## 👥 Organizers
 
+The **Arena Challenge 2024** is organized by a dedicated team of experts in robotics, AI, and autonomous navigation. Our goal is to advance research in socially-aware navigation and contribute to real-world robotics applications.
+
+| ![Organizer 1](https://via.placeholder.com/150) | ![Organizer 2](https://via.placeholder.com/150) | ![Organizer 3](https://via.placeholder.com/150) |
+|------------------------------------------------|------------------------------------------------|------------------------------------------------|
+| **Dr. Linh Kaestner**                          | **Dr. Alex Doe**                               | **Prof. Jamie Lee**                             |
+| Lead Organizer                                 | Technical Chair                                | Research Advisor                                |
+
+| ![Organizer 4](https://via.placeholder.com/150) | ![Organizer 5](https://via.placeholder.com/150) |
+|------------------------------------------------|------------------------------------------------|
+| **Samim Ahmadhi**                             | **Jordan Smith**                              |
+| Program Manager                               | Logistics Coordinator                          |
+
+---
+
+### 🎯 About the Organizers
+
+- **Linh Kaestner**: Lead developer of the **Arena platform** and expert in simulation environments for social navigation.  
+- **Alex Doe**: Specialist in dynamic robotics systems and advanced AI planning algorithms.  
+- **Jamie Lee**: Advisor and mentor, contributing to research strategies and evaluation frameworks.  
+- **Samim Ahmadhi**: Project manager overseeing timelines, communication, and partnership coordination.  
+- **Jordan Smith**: Responsible for event logistics, communications, and participant support.
