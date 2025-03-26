@@ -110,9 +110,7 @@ Performance evaluation will be based on the following metrics:
 ### 2. Collision Penalty ( \( P \) )
 - A penalty incurred for each collision with dynamic obstacles or pedestrians, calculated as:
 
-$$
-P = N_c \times p
-$$
+\[ P = N_c \times p \]
 
 Where:  
 - \( N_c \) = Number of collisions  
