@@ -149,7 +149,7 @@ td {
 }
 
 #showcase1{
-	background: url('../challenge_gif/gif_1.gif');
+	background: url('challenge_gif/gif_1.gif');
 	background-size: cover;
 	margin-left: 15px;
 	height: 280px; 
@@ -159,7 +159,7 @@ td {
 }
 
 #showcase2{
-	background: url('../challenge_gif/gif_3.gif');
+	background: url('challenge_gif/gif_3.gif');
 	background-size: cover;
 	height: 220px; 
 	margin-top: 10px;
