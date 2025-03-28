@@ -1,0 +1,193 @@
+body{
+	background-color: white;
+	color:#555555;
+	font: normal 16px Arial, Helvetica, sans-serif;
+	line-height: 1.6em;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+a{
+	text-decoration: none;
+	color: blue;
+}
+
+a:hover{
+	color:red;
+}
+
+a:active{
+	color: green;
+}
+
+
+.container{
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+}
+
+
+.main-container {
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.main-container main{
+	float: right;
+	width: 75%;
+	padding: 0 30px;
+	padding-right: 25%;
+	box-sizing: border-box;
+}
+
+.code {
+    background-color: lightgray;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+
+
+#sidebar{
+	float: left;
+	width: 20%;
+	height: auto;
+	position: auto;
+
+	/*background-color: #aaaa;*/
+	background-color: black;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-left: 20px;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+#sidebar ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: 1.7em;
+}
+
+#sidebar a{
+	text-decoration: none;
+	/*color: #555555;*/
+	color: white;
+	display: block;
+}
+
+#sidebar a:hover{
+	color: red;
+}
+
+#sidebar a:active{
+	color: green;
+}
+
+
+#main-header h1{
+	text-decoration: none;
+}
+
+#header-container{
+	background-color: darkblue;
+	width: 70%;
+	margin: none;
+	overflow: hidden;
+	/* float: left; */
+}
+
+
+#navbar{
+	color: white;
+	display: block;
+	float: right;
+	background-color: darkblue;
+}
+
+table {
+    width: 100%
+}
+
+table {
+    border: 1px solid #ccc;
+    margin-bottom: 32px;
+    text-align: left
+}
+
+th {
+    font-family: 'Arvo', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 10px;
+    background: #232323;
+    color: #FDFEFB
+}
+
+td {
+    padding: 10px;
+    background: #ccc
+}
+
+#navbar ul{
+	padding: 0;
+	list-style: none;
+}
+
+#navbar li{
+	display: inline;
+}
+
+#navbar a{
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	padding-right: 15px;
+}
+
+#showcase1{
+	background: url('challenge_gif/gif_1.gif');
+	background-size: cover;
+	margin-left: 15px;
+	height: 280px; 
+	margin-bottom: 30px;
+	text-align: center;
+	width: 100%;
+}
+
+#showcase2{
+	background: url('challenge_gif/gif_3.gif');
+	background-size: cover;
+	height: 220px; 
+	margin-top: 10px;
+	margin-left: 15px;
+	text-align: center;
+	width: 100%;
+}
+
+div.roster {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-between; 
+}
+
+div.headshot {
+  height: 175px;
+  background-color: white;
+  /*border: 1px solid #000000;*/
+  margin: 20px;
+}
+
+.roster-name {
+  text-align: center;
+  margin-top: 10px;
+}
+.headshot img {
+ display: block;
+ margin: auto;
+  margin-top: 20px;
+}
