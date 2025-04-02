@@ -102,16 +102,16 @@ The leaderboard ranks participating teams based on their overall performance sco
 ## 👥 Organizers
 
 | ![Organizer 1](https://via.placeholder.com/150) | ![Organizer 2](https://via.placeholder.com/150) | ![Organizer 3](https://via.placeholder.com/150) |
-|------------------------------------------------|------------------------------------------------|------------------------------------------------|
-| **Dr. Linh Kaestner**                          | **Dr. Alex Doe**                               | **Prof. Jamie Lee**                             |
-| Lead Organizer                                 | Technical Chair                                | Research Advisor                                |
+|--------------------------------------------------|--------------------------------------------------|--------------------------------------------------|
+| **Dr. Linh Kaestner**                            | **Dr. Alex Doe**                                 | **Prof. Jamie Lee**                              |
+| Lead Organizer                                   | Technical Chair                                  | Research Advisor                                 |
 
 | ![Organizer 4](https://via.placeholder.com/150) | ![Organizer 5](https://via.placeholder.com/150) |
-|------------------------------------------------|------------------------------------------------|
-| **Samim Ahmadhi**                             | **Jordan Smith**                              |
-| Program Manager                               | Logistics Coordinator                          |
+|--------------------------------------------------|--------------------------------------------------|
+| **Samim Ahmadhi**                                | **Jordan Smith**                                 |
+| Program Manager                                  | Logistics Coordinator                            |
 
----
+
 
 ### 🎯 About the Organizers
 
