@@ -1,453 +1,508 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171292039-5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-171292039-5');
+    </script>
+    
+    <title>The 2025 ICRA Arena Challenge</title>
+    <meta name="description" content="website for 2025 ICRA Arena Challenge">
+    <meta name="keywords" content="robotics, navigation, mobile robots, social navigation">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="challenge_images/arena_rosnav.png">
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"WebSite","description":"Website for the arena challenge","headline":"The 2025 ICRA Arena Challenge","name":"arena-challenge","url":"http://linhdoan.io/arena-challenge/"}
+    </script>
+    <script src="/arena-challenge/assets/js/scale.fix.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </head>
 
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171292039-5"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
+  <body>
+    <header id="main-header">
+      <center><h1>The 2025 ICRA Arena Challenge</h1></center>
+    </header>
 
-		  gtag('config', 'UA-171292039-5');
-		</script>
-		
-		<title>The 2025 ICRA Arena Challenge</title>
-		<meta name="description" content="website for 2025 ICRA Arena Challenge">
-		<meta name="keywords" content="robotics, navigation, mobile robots">
-		<link rel="stylesheet" href="styles.css">
-		<link rel="icon" type="image/x-icon" href="challenge_images/arena_rosnav.png">
-		<script type="application/ld+json">
-			{"@context":"https://schema.org","@type":"WebSite","description":"Website for the arena challenge","headline":"The 2025 ICRA Arena Challenge","name":"arena-challenge","url":"http://linhdoan.io/arena-challenge/"}</script>
-		<script src="/arena-challenge/assets/js/scale.fix.js"></script>
-		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-	</head>
+    <section id="showcase1">
+      <!-- Existing media content remains unchanged -->
+    </section>
 
+    <div class="main-container">
+      <aside id="sidebar">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#challenge-overview">Challenge Overview</a></li>
+          <li><a href="#evaluation">Evaluation Criteria &amp; Metrics</a></li>
+          <li><a href="#prize-money">Prize Money</a></li>
+          <li><a href="#competition-structure">Competition Structure</a></li>
+          <li><a href="#who-should-participate">Who Should Participate?</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#how-to-participate">How to Participate</a></li>
+          <li><a href="#leaderboard">Leaderboard</a></li>
+          <li><a href="#organizers">Organizers</a></li>
+          <li><a href="#about-organizers">About the Organizers</a></li>
+        </ul>
+      </aside>
 
-	<body>
-		<header id="main-header">
-		</header>
+      <main>
+        <!-- Introduction -->
+        <section id="about">
+          <h2>About</h2>
+          <p>
+            As part of the workshop Advances in Social Navigation: Planning, HRI and Beyond, the Arena 2025 challenge aims to benchmark recent state of the art social navigation approaches for navigation in crowded collaborative environments. We utilize our arena platform to host the competition. The <strong>Arena Challenge 2025</strong> invites participants to tackle the complexities of <strong>social navigation</strong> in <strong>crowded, dynamic, and collaborative environments</strong>. The goal is to develop autonomous navigation solutions capable of efficiently maneuvering through environments filled with pedestrians, dynamic obstacles, and realistic social interactions.
+          </p>
+        </section>
 
-		<section id="showcase1">
-		</section>
+        <!-- Challenge Overview -->
+        <section id="challenge-overview">
+         
+          <p>
+            Participants are required to design and develop navigation algorithms that can handle:
+          </p>
+          <ul>
+            <li><strong>Dynamic and Complex Environments</strong>: Navigate through environments populated with moving pedestrians and unpredictable social dynamics.</li>
+            <li><strong>Socially Aware Navigation</strong>: Respect social norms, avoid collisions, and interact safely with dynamic groups.</li>
+            <li><strong>Scalable Difficulty Levels</strong>: Overcome environments that gradually increase in complexity and difficulty.</li>
+          </ul>
+          
+        </section>
 
-		<div class="main-container">
-			<aside id="sidebar">
-				<ul>
-					<li><a href="#about">About</a></li>
-                    <li><a href="#challenge overview">Challenge overview</a></li>
-                    <li><a href="#challenge focus">Challenge Focus</a></li>
-                    <li><a href="#evaluation criteria">Evaluation criteria</a></li>
-                    <li><a href="#prize money">Prize Money</a></li>
-                    <li><a href="#competition structure">Competition Structure</a></li>
-                    <li><a href="#who should participate">Who Should Participate?</a></li>
-                    <li><a href="#timeline">Timeline</a></li>
-					<li><a href="#how to participate">How to Participate</a></li>
-					<li><a href="#why join">Why Join?</a></li>
-					<li><a href="#competition rules">Competition Rules</a></li>
-					<li><a href="#calculation of metrics and points">Calculation of Metrics and Points</a></li>
-					<li><a href="#leaderboard arena challenge 2024">Leaderboard: Arena Challenge 2024</a></li>
-					<li><a href="#organizers">Organizers</a></li>
-					<li><a href="#about the organizers">About the Organizers</a></li>
-				</ul>
-			</aside>
-			<main>
-				<center><h1>The 2025 ICRA Arena Challenge</h1></center>
-				<hr/>
+		<section id="challenge-info">
+			<h2>Competition Structure</h2>
+			<p>
+			  The Arena Challenge dataset comprises 9 pre-generated dynamic navigation environments, ranging from moderately busy spaces to highly congested and complex scenarios, and an environment generator that can produce novel dynamic social environments. The task is to navigate a standardized mobile robot from a predefined start to a goal location while efficiently maneuvering through dynamic crowds and avoiding collisions. The robot is standardized with a 2D LiDAR sensor, a differential drive system with a maximum speed of 2 m/s, and onboard computational resources provided by the organizers. Participants will need to develop navigation systems that consume the standardized LiDAR input, perform all computation onboard using the provided resources, and output motion commands to drive the robot. Participants are welcome to use any approaches to tackle the social navigation problem, such as classical sampling-based or optimization-based planners, end-to-end learning techniques, or hybrid approaches.
+			</p>
+		  
+			<p>
+			  The following infrastructure will be provided by the competition organizers:
+			</p>
+		  
+			<ul>
+			  <li>The 9 pre-generated dynamic navigation environments</li>
+			  <li>The dynamic environment generator to produce novel social navigation scenarios</li>
+			  <li>Baseline navigation systems including classical approaches (DWB, TEB) and our ROSNAV agent</li>
+			  <li>A training pipeline running the standardized mobile robot in either Gazebo simulation or Isaac Sim with Robot Operating System (ROS) Noetic on Ubuntu 22.04, with the option of being containerized in Docker or Singularity containers for fast and standardized setup and evaluation</li>
+			  <li>A standardized evaluation pipeline to compete against other navigation systems</li>
+			</ul>
 
-				<!-- <h2>
-                Congrats LiCS-KI, MLDA_EEE, and AIMS for winning the 1st, 2nd, and 3rd place of The BARN Challenge at ICRA 2025! See you next year! 
-                </h2> -->
-               <!--  <center>
-					<img src="challenge_images/barn_at_icra_2024.jpg" alt="Physical Example" width="650">
-				</center> -->
+			<div style="text-align: center; margin: 20px 0;">
+				<img src="challenge_images/image_1.png" alt="Competition Structure" style="max-width: 100%; height: auto;">
+				<figcaption>Figure 1: Exemplary test world in Arena 5.0</figcaption>  
+			</div>
+			
+		  </section>
 
-				<section id="about">
-                    <h2>About</h2>
-        				<p>As part of the workshop Advances in Social Navigation: Planning, HRI and Beyond, the Arena 2025 challenge aims to benchmark recent state of the art social navigation approaches for navigation in crowded collaborative environments. We utilize our arena platform to host the competition. The Arena Challenge 2024 invites participants to tackle the complexities of social navigation in crowded, dynamic, and collaborative environments. The goal is to develop autonomous navigation solutions capable of efficiently maneuvering through environments filled with pedestrians, dynamic obstacles, and realistic social interactions.</p>
-						<center>
-							<img src="challenge_images/image_1.png" alt="Different Environment" width="700">
-						</center>
-						<br>
-				</section>
-
-				<section id="challenge overview">
-                    <h2>🎯 Challenge Overview</h2>
-					<hr/>
-                    	<p>
-							Participants are required to design and develop navigation algorithms that can handle:
-        				</p>
-        				<ul>
-							<li>
-								<strong>Dynamic and Complex Environments</strong>: Navigate through environments populated with moving pedestrians and unpredictable social dynamics.
-							</li>
-							<li>
-								<strong>Socially Aware Navigation</strong>: Respect social norms, avoid collisions, and interact safely with dynamic groups.
-							</li>
-							<li>
-								<strong>Collaborative Scenarios</strong>: Address scenarios that require understanding and adapting to group dynamics and collaborative movement within crowds.
-							</li>
-						</ul>
-        				<br>
-				</section>
-
-				<section id="challenge focus">
-					<h2>🚀 Challenge Focus</h2>
-					<hr/>
-						<ul>
-							<li><strong>Dynamic &amp; Crowded Environments</strong>: Tackle multiple dynamic environments populated with moving pedestrians, obstacles, and social interactions.</li>
-							<li><strong>Social Interaction Awareness</strong>: Navigate while respecting social norms, avoiding collisions, and adapting to unpredictable human behaviors.</li>
-							<li><strong>Collaborative Scenarios</strong>: Address scenarios that require understanding and adapting to group dynamics and collaborative movement within crowds.</li>
-					  	</ul>
-					<br>
-				</section>
-
-				<section id="evaluation criteria">
-					<h2>🛠️ Evaluation Criteria</h2>
-					<hr/>
-						<p>Algorithms will be evaluated based on:</p>
-						<ul>
-						  <li><strong>Efficiency</strong>: How quickly and effectively the robot can navigate through the environment.</li>
-						  <li><strong>Safety</strong>: Avoidance of collisions with pedestrians and dynamic obstacles.</li>
-						  <li><strong>Social Compliance</strong>: Adherence to social norms and smooth navigation in collaborative scenarios.</li>
-						</ul>
-						<br>
-				</section>
-
-				<section id="prize money">
-					<h2>🏆 Prize Money</h2>
-					<hr/>
-						<p>Top-performing teams will be awarded <strong>prize money</strong> in recognition of their innovative and effective solutions.</p>
-						<br>
-				</section>
-
-				<section id="competition structure">
-					<h2>🛠️ Competition Structure</h2>
-					<hr/>
-						<ul>
-							<li>A series of <strong>dynamic environments</strong> with varying levels of complexity and difficulty.</li>
-							<li>Each environment simulates real-world social dynamics, including:
-							  <ul>
-								<li>Dense pedestrian traffic</li>
-								<li>Variable speeds and unpredictable movements</li>
-								<li>Collaborative human behaviors and group formations</li>
-							  </ul>
-							</li>
-					  	</ul>
-						<br>
-				</section>
-
-				<section id="who should participate">
-					<h2>👥 Who Should Participate?</h2>
-					<hr/>
-						<ul>
-							<li>Researchers in robotics, AI, and autonomous systems.</li>
-							<li>Developers focusing on social navigation and dynamic path planning.</li>
-							<li>Innovators aiming to push the boundaries of autonomous navigation in social contexts.</li>
-					  	</ul>
-						<br>
-				</section>
-
-				<section id="timeline">
-					<h2>📅 Timeline</h2>
-					<hr/>
-						<ul>
-							<li><strong>Registration Opens</strong>: 15 March 2025</li>
-							<li><strong>Challenge Begins</strong>: 15 March 2025</li>
-							<li><strong>Submission Deadline</strong>: 01 May 2025</li>
-							<li><strong>Winner Announcement</strong>: 21 May 2025</li>
-					  	</ul>
-						<br>
-				</section>
-
-				<section id="how to participate">
-					<h2>⚙️ How to Participate</h2>
-					<hr/>
-						<ol>
-							<li><strong>Register</strong> your team via [Insert Link].</li>
-							<li><strong>Download</strong> the environment simulation package.</li>
-							<li><strong>Develop</strong> your navigation algorithm to tackle the dynamic social scenarios.</li>
-							<li><strong>Submit</strong> your results for evaluation.</li>
-					  	</ol>
-						<br>
-				</section>
-
-				<section id="why join">
-					<h2>🌟 Why Join?</h2>
-					<hr/>
-						<ul>
-							<li>Benchmark your navigation solutions against the best in the field.</li>
-							<li>Gain exposure and feedback from experts and industry leaders.</li>
-							<li>Contribute to advancing social navigation research and real-world applications.</li>
-					  	</ul>
-						<br>
-				</section>
-
-				<section id="competition rules">
-					<h2>📝 Competition Rules</h2>
-					<hr/>
-						<p>Participants in the <strong>Arena Challenge 2024</strong> are required to develop autonomous navigation systems capable of effectively operating in dynamic, crowded, and collaborative environments. The primary objective is to navigate a standardized robot from a predefined start location to a goal location as efficiently and safely as possible, adhering to the following rules:</p>
-						<ol>
-						  <li><strong>Robot Specifications</strong>:
-							<ul>
-							  <li><strong>Platform</strong>: Clearpath Jackal robot equipped with:
-								<ul>
-								  <li><strong>Perception</strong>: 2D LiDAR with a 270° field of view.</li>
-								  <li><strong>Actuation</strong>: Differential drive system with a maximum speed of 2 m/s.</li>
-								  <li><strong>Computation</strong>: Onboard computing resources provided by the organizers.</li>
-								</ul>
-							  </li>
-							</ul>
-						  </li>
-						  <li><strong>Environment</strong>:
-							<ul>
-							  <li><strong>Dynamic Obstacles</strong>: Environments will include moving pedestrians and dynamic obstacles exhibiting various motion profiles to simulate real-world social scenarios.</li>
-							  <li><strong>Variability</strong>: Environments will vary in complexity, from moderately crowded spaces to highly dynamic and dense crowds.</li>
-							</ul>
-						  </li>
-						  <li><strong>Task</strong>:
-							<ul>
-							  <li>Develop a navigation system that processes LiDAR input and outputs motion commands to drive the robot from the start to the goal location without collisions.</li>
-							</ul>
-						  </li>
-						  <li><strong>Approaches</strong>:
-							<ul>
-							  <li>Participants may employ any method, including classical planning algorithms, machine learning techniques, or hybrid approaches.</li>
-							</ul>
-						  </li>
-						  <li><strong>Simulation and Physical Trials</strong>:
-							<ul>
-							  <li>The competition consists of both simulated environments and physical trials at the conference venue.</li>
-							  <li>Performance in simulation will determine eligibility for the physical trials.</li>
-							</ul>
-						  </li>
-						</ol>
-						<center>
-							<img src="challenge_gif/gif_2.gif" alt="Video Environment" width="700">
-						</center>
-						<br>
-				</section>
-
-				<section id="calculation of metrics and points">
-					<h2>📊 Calculation of Metrics and Points</h2>
-					<hr/>
-						<p>Performance evaluation will be based on the following metrics:</p>
-
-						<h3 id="1-completion-time---t--">1. Completion Time ( ( T ) )</h3>
-							<hr/>
-							<ul>
-							  <li>The time taken by the robot to navigate from the start to the goal location.</li>
-							</ul>
-
-						<h3 id="2-collision-penalty---p--">2. Collision Penalty ( ( P ) )</h3>
-							<hr/>
-							<ul>
-							  <li>A penalty incurred for each collision with dynamic obstacles or pedestrians, calculated as:</li>
-							</ul>
-
-							\[\text{P} = N_{c} \times p\]
-
-							<p>Where:</p>
-							<ul>
-							  <li>( <span>N</span><sub>c</sub> ) = Number of collisions</li>
-							  <li>( p ) = Penalty per collision (a constant value determined by the organizers)</li>
-							</ul>
-
-						<h3 id="3-social-compliance-score---s--">3. Social Compliance Score ( ( S ) )</h3>
-							<hr/>
-							<ul>
-							  <li>A score reflecting the robot’s adherence to social norms, such as maintaining appropriate distances from pedestrians and avoiding abrupt movements.</li>
-							  <li>This score ranges between <strong>0</strong> (non-compliant) and <strong>1</strong> (fully compliant).</li>
-							</ul>
-							<br>
-
-						<h3 id="-overall-performance-score">🚀 Overall Performance Score</h3>
-							<hr/>
-
-							<p>The overall performance score is calculated as follows:</p>
-
-							\[\text{Score} = \frac{1}{T + P} \times S\]
-
-							<p>Where:</p>
-							<ul>
-							  <li>( T ) = Completion time (in seconds)</li>
-							  <li>( P ) = Total collision penalty</li>
-							  <li>( S ) = Social compliance score</li>
-							</ul>
-
-							<blockquote>
-							  <p><strong>Note</strong>: A <strong>higher score</strong> indicates better performance, balancing efficiency, safety, and social compliance.</p>
-							</blockquote>
-						<br>
-				</section>
-
-				<section id="leaderboard arena challenge 2024">
-					<h2>🏅 Leaderboard: Arena Challenge 2024</h2>
-					<hr/>
-						<p>The leaderboard ranks participating teams based on their overall performance scores, considering completion time, collision penalties, and social compliance.</p>
-
-						<table>
-						  <thead>
-							<tr>
-							  <th><strong>Rank</strong></th>
-							  <th><strong>Team Name</strong></th>
-							  <th><strong>Completion Time (s)</strong></th>
-							  <th><strong>Collision Penalty</strong></th>
-							  <th><strong>Social Compliance Score</strong></th>
-							  <th><strong>Final Score</strong></th>
-							</tr>
-						  </thead>
-						  <tbody>
-							<tr>
-							  <td>1</td>
-							  <td>Team Alpha</td>
-							  <td>120.5</td>
-							  <td>2.0</td>
-							  <td>0.95</td>
-							  <td>0.0076</td>
-							</tr>
-							<tr>
-							  <td>2</td>
-							  <td>RoboNav</td>
-							  <td>135.2</td>
-							  <td>1.5</td>
-							  <td>0.90</td>
-							  <td>0.0065</td>
-							</tr>
-							<tr>
-							  <td>3</td>
-							  <td>NavAI</td>
-							  <td>140.8</td>
-							  <td>3.0</td>
-							  <td>0.92</td>
-							  <td>0.0063</td>
-							</tr>
-							<tr>
-							  <td>4</td>
-							  <td>PathFinders</td>
-							  <td>150.0</td>
-							  <td>4.0</td>
-							  <td>0.88</td>
-							  <td>0.0055</td>
-							</tr>
-							<tr>
-							  <td>5</td>
-							  <td>SocialBot</td>
-							  <td>160.3</td>
-							  <td>2.5</td>
-							  <td>0.85</td>
-							  <td>0.0052</td>
-							</tr>
-							<tr>
-							  <td>…</td>
-							  <td>…</td>
-							  <td>…</td>
-							  <td>…</td>
-							  <td>…</td>
-							  <td>…</td>
-							</tr>
-						  </tbody>
-						</table>
-
-						<h3 id="-score-calculation-formula">📊 Score Calculation Formula</h3>
-							\[\text{Score} = \frac{1}{T + P} \times S\]
-							<p>Where:</p>
-							<ul>
-							  <li>( T ) = Completion Time (in seconds)</li>
-							  <li>( P ) = Collision Penalty</li>
-							  <li>( S ) = Social Compliance Score (between 0 and 1)</li>
-							</ul>
-
-						<h3 id="️-how-to-interpret-the-scores">🛠️ How to Interpret the Scores</h3>
-							<ul>
-							  <li><strong>Higher scores</strong> indicate better navigation performance, accounting for efficiency, safety, and social awareness.</li>
-							  <li><strong>Collision Penalties</strong>: Every collision incurs a predefined penalty, increasing the total score denominator.</li>
-							  <li><strong>Social Compliance</strong>: Robots that adhere to social norms and safe navigation behaviors receive higher scores.</li>
-							</ul>
-
-						<hr />
-
-						<p><strong>Note</strong>: The leaderboard will be <strong>continuously updated</strong> as teams submit and improve their solutions.</p>
-						<br>
-				</section>
-
-				<section id="organizers">
-					<h2>👥 Organizers</h2>
-					<hr/>
-						<p>The <strong>Arena Challenge 2024</strong> is organized by a dedicated team of experts in robotics, AI, and autonomous navigation. Our goal is to advance research in socially-aware navigation and contribute to real-world robotics applications.</p>
-
-						<div class="roster">
+		  <!-- How to Participate -->
+		  <section id="how-to-participate">
+			<h2>How to Participate</h2>
+			<ol>
+			  <li>
+				<strong>Clone our repository</strong> via <a href="https://github.com/Arena-Rosnav" target="_blank">Arena-Rosnav</a>.
+			  </li>
+			  <li>
+				<strong>Download</strong> the simulation environments at <a href="https://github.com/Arena-Rosnav/arena-simulation-setup" target="_blank">Arena-Simulation-Setup</a>.
+			  </li>
+			  <li>
+				<strong>Integrate</strong> your navigation algorithm using our <a href="https://github.com/zenghjian/nav2py_template" target="_blank">Nav2 Template</a> (s. Fig. 2) and test it locally on your computer.
+			  </li>
+			  <li>
+				<span style="color:red; font-size:1.2em; font-weight:bold;">Reach out to us so we can integrate and test it together!</span>
+			  </li>
+			  <li>
+				<strong>Upload</strong> your code on your branch and make a pull request.
+			  </li>
+			</ol>
+			<p>
+			  Note: You can continuously push updates until the submission deadline. On the day of the submission deadline, we will pull the latest version and run them on the worlds.
+			</p>
   
-						  	<div class="headshot">
-						  		<a href="" target="_blank"><img src="organizer_image/linh_kaestner.jpg" alt="Linh Kaestner" height="100"></a>
-						      	<div class="roster-name">
-					          		<b>Dr.Linh Kaestner </b><br>
-					          		Lead Organizer
-					    	  	</div><!--roster-name-->
-					  		</div><!--headshot-->
-						  
-						  	<div class="headshot">
-						  		<a href="" target="_blank"><img src="organizer_image/alex_doe.jpg" alt="Dr. Alex Doe" height="100"></a>
-						      	<div class="roster-name">
-						        	<b>Dr. Alex Doe </b><br>
-						        	Technical Chair
-					    		</div><!--roster-name-->
-						  	</div><!--headshot-->
+			<p>
+			 *** How to integrate planners ***: A short tutorial below you can see the system of our wrapper to integrate your planner as a nav2 plugin using the ros2 interface nav2
+			 we have integrated a number of planners using this system (s. arena 5.0 paper link).
+			</p>
+			  <div style="text-align: center; margin: 20px 0;">
+				  <img src="challenge_images/sd-navplugin.png" alt="Competition Structure" style="max-width: 100%; height: auto;">
+				  <figcaption>Figure 2: Architecture of our Nav2Py plugin</figcaption>
+			  </div>
+			  <p>
+				Participants will integrate their planner into our arena platform and upload their code on a dedicated branch for us to test.
+			  </p>
+			  <p>
+				<span style="color:red; font-size:1.2em; font-weight:bold;">Important:</span>
+				We have integrated a number of state-of-the-art planners in the past and have encountered issues such as overfitting, functionality errors, non-operational planners, outdated dependencies, and more. These challenges make reproducibility a key concern. Please reach out to us if you experience any problems during integration. Our team of dedicated researchers is available to assist you and can even retrain your algorithms on our servers. Feel free to contact us for any support you may need.
+			  </p>
+		  </section>
+  
 
-						  	<div class="headshot">
-						  		<a href="" target="_blank"><img src="organizer_image/jamie_lee.jpg" alt="Jamie Lee" height="100"></a>
-						      	<div class="roster-name">
-						        	<b>Prof. Jamie Lee</b><br>
-						        	Research Advisor
-					    		</div><!--roster-name-->
-						  	</div><!--headshot-->
+        <!-- Evaluation Criteria & Calculation of Metrics -->
+        <section id="evaluation">
+          <h2>Evaluation Criteria and Calculation of Metrics</h2>
+          <p>Algorithms will be evaluated based on:</p>
+          <ul>
+            <li><strong>Efficiency</strong>: How quickly and effectively the robot can navigate through the environment.</li>
+            <li><strong>Safety</strong>: Avoidance of collisions with pedestrians and dynamic obstacles.</li>
+            <li><strong>Social Compliance</strong>: Adherence to social norms and smooth navigation in collaborative scenarios.</li>
+          </ul>
+          <p>Performance evaluation will be based on the following metrics:</p>
 
-						  	<div class="headshot">
-						  		<a href="" target="_blank"><img src="organizer_image/samim_ahmadhi.jpg" alt="Samim Ahmadhi" height="100"></a>	      	
-						      	<div class="roster-name">
-						        	<b> Samim Ahmadhi </b><br>
-						        	Program Manager
-					    		</div><!--roster-name-->
-						  	</div><!--headshot-->
+          <h3>1. Completion Time (<span>T</span>)</h3>
+          <p>
+            The time taken by the robot to navigate from the start to the goal location.
+          </p>
 
-					 	  	<div class="headshot">
-						  		<a href="" target="_blank"><img src="organizer_image/jordan_smith.jpg" alt="Jordan Smith" height="100"></a>	      	
-						      	<div class="roster-name">
-						        	<b> Jordan Smith </b><br>
-						        	Logistics Coordinator
-					    		</div><!--roster-name-->
-						  	</div><!--headshot-->
-						  
-						</div><!--roster-->
+          <h3>2. Collision Penalty (<span>P</span>)</h3>
+          <p>
+            A penalty incurred for each collision with dynamic obstacles or pedestrians, calculated as:
+          </p>
+          <p>
+            $$ P = N_c \times p $$
+          </p>
+          <p>Where:</p>
+          <ul>
+            <li>$N_c$ = Number of collisions</li>
+            <li>$p$ = Penalty per collision (a constant value determined by the organizers)</li>
+          </ul>
 
-						<hr />
-						<br>
-				</section>
+          <h3>3. Social Compliance Score (<span>S</span>)</h3>
+          <p>
+            A score reflecting the robot's adherence to social norms, such as maintaining appropriate distances from pedestrians and avoiding abrupt movements. This score ranges between <strong>0</strong> (non-compliant) and <strong>1</strong> (fully compliant).
+          </p>
 
-				<section id="about the organizers">
-					<h2>🎯 About the Organizers</h2>
-					<hr/>
-						<ul>
-							<li><strong>Linh Kaestner</strong>: Lead developer of the <strong>Arena platform</strong> and expert in simulation environments for social navigation.</li>
-							<li><strong>Alex Doe</strong>: Specialist in dynamic robotics systems and advanced AI planning algorithms.</li>
-							<li><strong>Jamie Lee</strong>: Advisor and mentor, contributing to research strategies and evaluation frameworks.</li>
-							<li><strong>Samim Ahmadhi</strong>: Project manager overseeing timelines, communication, and partnership coordination.</li>
-							<li><strong>Jordan Smith</strong>: Responsible for event logistics, communications, and participant support.</li>
-						</ul>
-						<br>
-				</section>
-			</main>
-		</div>
+          <hr />
 
-		<section id="showcase2">
-		</section>
+          <h2>🚀 Overall Performance Score</h2>
+          <p>The overall performance score is calculated as follows:</p>
+          <p>
+            $$ \text{Score} = \frac{1}{T + P} \times S $$
+          </p>
+          <p>Where:</p>
+          <ul>
+            <li>$T$ = Completion time (in seconds)</li>
+            <li>$P$ = Total collision penalty</li>
+            <li>$S$ = Social compliance score</li>
+          </ul>
+          <blockquote>
+            <p><strong>Note:</strong> A <strong>higher score</strong> indicates better performance, balancing efficiency, safety, and social compliance.</p>
+          </blockquote>
+        </section>
 
-		<div>
-			<footer id="main-footer">
-			</footer>
-		</div>
+        <!-- Prize Money -->
+        <section id="prize-money">
+          <h2>Prize Money</h2>
+          <p>
+            Top-performing teams will be awarded <strong>prize money</strong> in recognition of their innovative and effective solutions.
+          </p>
+        </section>
+
 		
-	</body>
+        <!-- Who Should Participate -->
+        <section id="who-should-participate">
+          <h2>👥 Who Should Participate?</h2>
+          <p>
+            Everyone is welcome to participate! Participants include, but are not limited to, researchers in robotics, AI, and autonomous systems; developers focusing on social navigation and dynamic path planning; and undergraduate or graduate students interested in testing how their planners perform in social scenarios.
+          </p>
+          <p>
+            <strong>Note:</strong> The planning approaches do not necessarily have to be specifically designed for social navigation. We are also interested in observing how classical navigation planners or other dynamic obstacle avoidance methods perform, as these approaches can sometimes prove more efficient.
+          </p>
+        </section>
 
+        <!-- Timeline -->
+        <section id="timeline">
+          <h2>📅 Timeline</h2>
+          <ul>
+            <li><strong>Challenge Begins</strong>: 01 April 2025 (AoE)</li>
+            <li><strong>Submission Deadline</strong>: 19 May 2025 (AoE)</li>
+            <li><strong>Winner Announcement</strong>: 21 May 2025 (3pm ET)</li>
+          </ul>
+        </section>
+
+        
+        <!-- Leaderboard -->
+        <section id="leaderboard">
+          <h2>🏅 Leaderboard: Arena Challenge 2025</h2>
+          <p>
+            The leaderboard ranks participating teams based on their overall performance scores, considering completion time, collision penalties, and social compliance.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th><strong>Rank</strong></th>
+                <th><strong>Team Name</strong></th>
+                <th><strong>Completion Time (s)</strong></th>
+                <th><strong>Collision Penalty</strong></th>
+                <th><strong>Social Compliance Score</strong></th>
+                <th><strong>Final Score</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>DWB</td>
+                <td>120.5</td>
+                <td>2.0</td>
+                <td>0.95</td>
+                <td>0.0076</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>RosNAV (Ours)</td>
+                <td>135.2</td>
+                <td>1.5</td>
+                <td>0.90</td>
+                <td>0.0065</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>DWB</td>
+                <td>140.8</td>
+                <td>3.0</td>
+                <td>0.92</td>
+                <td>0.0063</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Dragon</td>
+                <td>150.0</td>
+                <td>4.0</td>
+                <td>0.88</td>
+                <td>0.0055</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Crowdnav++</td>
+                <td>160.3</td>
+                <td>2.5</td>
+                <td>0.85</td>
+                <td>0.0052</td>
+              </tr>
+              <tr>
+                <td>…</td>
+                <td>…</td>
+                <td>…</td>
+                <td>…</td>
+                <td>…</td>
+                <td>…</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            <strong>Note:</strong> The leaderboard will be <strong>continuously updated</strong> as teams submit and improve their solutions.
+          </p>
+        </section>
+
+        <!-- Organizers -->
+		<section id="organizers" style="margin-bottom: 40px;">
+			<h2>👥 Organizers</h2>
+			<hr/>
+			<p>
+			  The <strong>Arena Challenge 2025</strong> is organized by a dedicated team of experts in robotics, AI, and autonomous navigation. Our goal is to advance research in socially-aware navigation and contribute to real-world robotics applications.
+			</p>
+			<div class="roster" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px;">
+			  <!-- Row 1 -->
+			  <div class="headshot" style="text-align: center;">
+				<a href="" target="_blank">
+				  <img src="people-pics/linh.png" alt="Dr. Linh Kaestner" style="height: 150px; width: 150px; object-fit: cover; border-radius: 50%;">
+				</a>
+				<div class="roster-name">
+					<b>
+						<a href="https://linhdoan.io/" target="_blank" style="text-decoration: none; color: blue;">
+						  Linh Kaestner
+						</a>
+					</b><br>
+				  National University Singapore
+				</div>
+			  </div>
+			  <div class="headshot" style="text-align: center;">
+				<a href="" target="_blank">
+				  <img src="people-pics/vova.png" alt="Dr. Alex Doe" style="height: 150px; width: 150px; object-fit: cover; border-radius: 50%;">
+				</a>
+				<div class="roster-name">
+					<b>
+						<a href="https://zenghjian.github.io/" target="_blank" style="text-decoration: none; color: blue;">
+						  Volodymyr Shcherbyna
+						</a>
+					</b><br>
+				  Technical University Berlin
+				</div>
+			  </div>
+			  <div class="headshot" style="text-align: center;">
+				<a href="" target="_blank">
+				  <img src="people-pics/huajian.png" alt="Prof. Jamie Lee" style="height: 150px; width: 150px; object-fit: cover; border-radius: 50%;">
+				</a>
+				<div class="roster-name">
+					<b>
+						<a href="https://zenghjian.github.io/" target="_blank" style="text-decoration: none; color: blue;">
+						  Huajian Zeng
+						</a>
+					</b>
+					<br>
+				  Technical University Munich
+				</div>
+			  </div>
+			  <div class="headshot" style="text-align: center;">
+				<a href="" target="_blank">
+				  <img src="people-pics/linh.png" alt="Samim Ahmadhi" style="height: 150px; width: 150px; object-fit: cover; border-radius: 50%;">
+				</a>
+				<div class="roster-name">
+				  <b>Huu Giang Nguyen</b><br>
+				  National University Singapore
+				</div>
+			  </div>
+			  <!-- Row 2 -->
+			  <div class="headshot" style="text-align: center;">
+				<a href="" target="_blank">
+				  <img src="people-pics/linh.png" alt="Jordan Smith" style="height: 150px; width: 150px; object-fit: cover; border-radius: 50%;">
+				</a>
+				<div class="roster-name">
+				  <b>Allan Wang</b><br>
+				  Carnegy Mellon University
+				</div>
+			  </div>
+			  <!-- Placeholders for additional organizers -->
+			  <div class="headshot" style="text-align: center;">
+				<a href="" target="_blank">
+				  <img src="people-pics/vova.png" alt="Organizer 6" style="height: 150px; width: 150px; object-fit: cover; border-radius: 50%;">
+				</a>
+				<div class="roster-name">
+				  <b>Nathan Tsoi</b><br>
+				  Yale
+				</div>
+			  </div>
+			  <div class="headshot" style="text-align: center;">
+				<a href="" target="_blank">
+				  <img src="people-pics/vova.png" alt="Organizer 7" style="height: 150px; width: 150px; object-fit: cover; border-radius: 50%;">
+				</a>
+				<div class="roster-name">
+				  <b>Phani Singmani</b><br>
+				  Laas-Crsi
+				</div>
+			  </div>
+			  <div class="headshot" style="text-align: center;">
+				<a href="" target="_blank">
+				  <img src="people-pics/vova.png" alt="Organizer 8" style="height: 150px; width: 150px; object-fit: cover; border-radius: 50%;">
+				</a>
+				<div class="roster-name">
+				  <b>Erica Weng</b><br>
+				  Carnegie Mellon University
+				</div>
+			  </div>
+			</div>
+		  </section>
+		  
+		  <section id="advisors" style="margin-bottom: 100px; margin-top: 100px;">
+			<h2>Advisors</h2>
+			<hr/>
+			<p>
+			  Workshop Organizers
+			</p>
+			<div class="roster" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px;">
+			  <!-- Row 1 for Advisors -->
+			  <div class="headshot" style="text-align: center;">
+				<a href="" target="_blank">
+				  <img src="people-pics/vova.png" alt="Advisor 1" style="height: 150px; width: 150px; object-fit: cover; border-radius: 50%;">
+				</a>
+				<div class="roster-name">
+				  <b>Anthony Francis</b><br>
+				  Title
+				</div>
+			  </div>
+			  <div class="headshot" style="text-align: center;">
+				<a href="" target="_blank">
+				  <img src="people-pics/vova.png" alt="Advisor 2" style="height: 150px; width: 150px; object-fit: cover; border-radius: 50%;">
+				</a>
+				<div class="roster-name">
+				  <b>Harold Soh</b><br>
+				  Title
+				</div>
+			  </div>
+			  <div class="headshot" style="text-align: center;">
+				<a href="" target="_blank">
+				  <img src="people-pics/vova.png" alt="Advisor 3" style="height: 150px; width: 150px; object-fit: cover; border-radius: 50%;">
+				</a>
+				<div class="roster-name">
+				  <b>Jorge</b><br>
+				  Title
+				</div>
+			  </div>
+			  <div class="headshot" style="text-align: center;">
+				<a href="" target="_blank">
+				  <img src="people-pics/vova.png" alt="Advisor 4" style="height: 150px; width: 150px; object-fit: cover; border-radius: 50%;">
+				</a>
+				<div class="roster-name">
+				  <b>Maren Bennewitz</b><br>
+				  Title
+				</div>
+			  </div>
+			  <!-- Row 2 for Advisors -->
+			  <div class="headshot" style="text-align: center;">
+				<a href="" target="_blank">
+				  <img src="people-pics/vova.png" alt="Advisor 5" style="height: 150px; width: 150px; object-fit: cover; border-radius: 50%;">
+				</a>
+				<div class="roster-name">
+				  <b>Advisor 5</b><br>
+				  Title
+				</div>
+			  </div>
+			  <div class="headshot" style="text-align: center;">
+				<a href="" target="_blank">
+				  <img src="people-pics/vova.png" alt="Advisor 6" style="height: 150px; width: 150px; object-fit: cover; border-radius: 50%;">
+				</a>
+				<div class="roster-name">
+				  <b>Advisor 6</b><br>
+				  Title
+				</div>
+			  </div>
+			  <div class="headshot" style="text-align: center;">
+				<a href="" target="_blank">
+				  <img src="people-pics/vova.png" alt="Advisor 7" style="height: 150px; width: 150px; object-fit: cover; border-radius: 50%;">
+				</a>
+				<div class="roster-name">
+				  <b>Advisor 7</b><br>
+				  Title
+				</div>
+			  </div>
+			  <div class="headshot" style="text-align: center;">
+				<a href="" target="_blank">
+				  <img src="people-pics/vova.png" alt="Advisor 8" style="height: 150px; width: 150px; object-fit: cover; border-radius: 50%;">
+				</a>
+				<div class="roster-name">
+				  <b>Advisor 8</b><br>
+				  Title
+				</div>
+			  </div>
+			</div>
+		  </section>
+		  
+
+        <!-- About the Organizers -->
+        <section id="about-organizers">
+          <h2>🎯 About the Organizers</h2>
+          <hr/>
+          <ul>
+            <li><strong>Linh Kaestner</strong>: Lead developer of the <strong>Arena platform</strong> and expert in simulation environments for social navigation.</li>
+            <li><strong>Alex Doe</strong>: Specialist in dynamic robotics systems and advanced AI planning algorithms.</li>
+            <li><strong>Jamie Lee</strong>: Advisor and mentor, contributing to research strategies and evaluation frameworks.</li>
+            <li><strong>Samim Ahmadhi</strong>: Project manager overseeing timelines, communication, and partnership coordination.</li>
+            <li><strong>Jordan Smith</strong>: Responsible for event logistics, communications, and participant support.</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <section id="showcase2">
+      <!-- Existing media content remains unchanged -->
+    </section>
+
+    <div>
+      <footer id="main-footer">
+        <!-- Footer content (if any) remains unchanged -->
+      </footer>
+    </div>
+    
+  </body>
 </html>

@@ -1,4 +1,4 @@
-# The 2025 ICRA Arena Challenge
+# The 2025 ICRA Arena Challenge 
 As part of the workshop Advances in Social Navigation: Planning, HRI and Beyond, the Arena 2025 challenge aims to benchmark recent state of the art social navigation approaches for navigation in crowded collaborative environments. We utilize our arena platform to host the competition. The **Arena Challenge 2024** invites participants to tackle the complexities of **social navigation** in **crowded, dynamic, and collaborative environments**. The goal is to develop autonomous navigation solutions capable of efficiently maneuvering through environments filled with pedestrians, dynamic obstacles, and realistic social interactions.
 
 ## Challenge Overview
