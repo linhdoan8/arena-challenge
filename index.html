@@ -75,7 +75,7 @@
 		<section id="challenge-info">
 			<h2>Competition Structure</h2>
 			<p>
-			  The Arena Challenge dataset comprises 9 pre-generated dynamic navigation environments, ranging from moderately busy spaces to highly congested and complex scenarios, and an environment generator that can produce novel dynamic social environments. The task is to navigate a standardized mobile robot from a predefined start to a goal location while efficiently maneuvering through dynamic crowds and avoiding collisions. The robot is standardized with a 2D LiDAR sensor, a differential drive system with a maximum speed of 2 m/s, and onboard computational resources provided by the organizers. Participants will need to develop navigation systems that consume the standardized LiDAR input, perform all computation onboard using the provided resources, and output motion commands to drive the robot. Participants are welcome to use any approaches to tackle the social navigation problem, such as classical sampling-based or optimization-based planners, end-to-end learning techniques, or hybrid approaches.
+			  The Arena Challenge dataset comprises 12 pre-generated dynamic navigation environments, ranging from moderately busy spaces to highly congested and complex scenarios, and an environment generator that can produce novel dynamic social environments. The task is to navigate a standardized mobile robot from a predefined start to a goal location while efficiently maneuvering through dynamic crowds and avoiding collisions. The robot is standardized with a 2D LiDAR sensor, a differential drive system with a maximum speed of 2 m/s, and onboard computational resources provided by the organizers. Participants will need to develop navigation systems that consume the standardized LiDAR input, perform all computation onboard using the provided resources, and output motion commands to drive the robot. Participants are welcome to use any approaches to tackle the social navigation problem, such as classical sampling-based or optimization-based planners, end-to-end learning techniques, or hybrid approaches.
 			</p>
 		  
 			<p>
@@ -83,7 +83,7 @@
 			</p>
 		  
 			<ul>
-			  <li>The 9 pre-generated dynamic navigation environments</li>
+			  <li>The 12 pre-generated dynamic navigation environments (s. Picture 1)</li>
 			  <li>The dynamic environment generator to produce novel social navigation scenarios</li>
 			  <li>Baseline navigation systems including classical approaches (DWB, TEB) and our ROSNAV agent</li>
 			  <li>A training pipeline running the standardized mobile robot in either Gazebo simulation or Isaac Sim with Robot Operating System (ROS) Noetic on Ubuntu 22.04, with the option of being containerized in Docker or Singularity containers for fast and standardized setup and evaluation</li>
@@ -91,7 +91,7 @@
 			</ul>
 
 			<div style="text-align: center; margin: 20px 0;">
-				<img src="challenge_images/image_1.png" alt="Competition Structure" style="max-width: 100%; height: auto;">
+				<img src="challenge_images/worlds.png" alt="Competition Structure" style="max-width: 100%; height: auto;">
 				<figcaption>Figure 1: Exemplary test world in Arena 5.0</figcaption>  
 			</div>
 			
@@ -122,15 +122,17 @@
 			</p>
   
 			<p>
-			 *** How to integrate planners ***: A short tutorial below you can see the system of our wrapper to integrate your planner as a nav2 plugin using the ros2 interface nav2
-			 we have integrated a number of planners using this system (s. arena 5.0 paper link).
+			<b>How to integrate planners</b>: A short tutorial — below you can see the system of our wrapper to integrate your planner as a nav2 plugin using the ROS2 interface nav2.  
+			We have integrated a number of planners using this system (see <a href="https://arxiv.org/abs/2409.12471" target="_blank" style="color:blue; text-decoration:underline;"><b>Arena</b> 5.0 Paper</a>).
+				
 			</p>
 			  <div style="text-align: center; margin: 20px 0;">
 				  <img src="challenge_images/sd-navplugin.png" alt="Competition Structure" style="max-width: 100%; height: auto;">
 				  <figcaption>Figure 2: Architecture of our Nav2Py plugin</figcaption>
 			  </div>
 			  <p>
-				Participants will integrate their planner into our arena platform and upload their code on a dedicated branch for us to test.
+				Participants will integrate their planner into our <a href="https://github.com/Arena-Rosnav" target="_blank" style="color:blue; text-decoration:underline;">Arena Platform</a> and upload their code on a dedicated branch for us to test.
+
 			  </p>
 			  <p>
 				<span style="color:red; font-size:1.2em; font-weight:bold;">Important:</span>
@@ -164,8 +166,9 @@
           </p>
           <p>Where:</p>
           <ul>
-            <li>$N_c$ = Number of collisions</li>
-            <li>$p$ = Penalty per collision (a constant value determined by the organizers)</li>
+			<li>\( N_c \) = Number of collisions</li>
+			<li>\( p \) = Penalty per collision (a constant value determined by the organizers)</li>
+			
           </ul>
 
           <h3>3. Social Compliance Score (<span>S</span>)</h3>
@@ -182,9 +185,9 @@
           </p>
           <p>Where:</p>
           <ul>
-            <li>$T$ = Completion time (in seconds)</li>
-            <li>$P$ = Total collision penalty</li>
-            <li>$S$ = Social compliance score</li>
+			<li>\( T \) = Completion time (in seconds)</li>
+			<li>\( P \) = Total collision penalty</li>
+			<li>\( S \) = Social compliance score</li>
           </ul>
           <blockquote>
             <p><strong>Note:</strong> A <strong>higher score</strong> indicates better performance, balancing efficiency, safety, and social compliance.</p>
@@ -212,19 +215,20 @@
         </section>
 
         <!-- Timeline -->
-        <section id="timeline">
-          <h2>📅 Timeline</h2>
-          <ul>
-            <li><strong>Challenge Begins</strong>: 01 April 2025 (AoE)</li>
-            <li><strong>Submission Deadline</strong>: 19 May 2025 (AoE)</li>
-            <li><strong>Winner Announcement</strong>: 21 May 2025 (3pm ET)</li>
-          </ul>
-        </section>
+		<section id="timeline" style="background-color:#f9f9f9; border: 2px solid #ccc; padding: 30px; border-radius: 10px; margin-top: 30px; text-align: center;">
+			<h2 style="color:#333; font-size: 28px; border-bottom: 2px solid #007BFF; display: inline-block; padding-bottom: 5px;">🗓️ Timeline</h2>
+			<ul style="list-style-type: none; padding-left: 0; font-size: 18px; line-height: 1.8;">
+			  <li><strong>Challenge Begins</strong>: 01 April 2025 (AoE)</li>
+			  <li><strong style="color: red;">Submission Deadline</strong>: <span style="color: red;"><strong>19 May 2025 (AoE)</strong></span></li>
+			  <li><strong>Winner Announcement</strong>: 21 May 2025 (3pm ET)</li>
+			</ul>
+		  </section>
+		  
 
         
         <!-- Leaderboard -->
         <section id="leaderboard">
-          <h2>🏅 Leaderboard: Arena Challenge 2025</h2>
+          <h2>Leaderboard: Arena Challenge 2025</h2>
           <p>
             The leaderboard ranks participating teams based on their overall performance scores, considering completion time, collision penalties, and social compliance.
           </p>
@@ -324,7 +328,7 @@
 				<div class="roster-name">
 					<b>
 						<a href="https://zenghjian.github.io/" target="_blank" style="text-decoration: none; color: blue;">
-						  Volodymyr Shcherbyna
+						  Volodymyr Sebyna
 						</a>
 					</b><br>
 				  Technical University Berlin
@@ -394,21 +398,21 @@
 			  <!-- Row 2 -->
 			  <div class="headshot" style="text-align: center;">
 				<a href="" target="_blank">
-				  <img src="people-pics/allan.jpg" alt="Jordan Smith" style="height: 150px; width: 150px; object-fit: cover; border-radius: 50%;">
+				  <img src="people-pics/jorge.jpg" alt="Jordan Smith" style="height: 150px; width: 150px; object-fit: cover; border-radius: 50%;">
 				</a>
 				<div class="roster-name">
-				  <b>Allan Wang</b><br>
-				  Carnegy Mellon University
+				  <b>Jorge de Heuvel</b><br>
+				  University Bonn
 				</div>
 			  </div>
 			  <!-- Placeholders for additional organizers -->
 			  <div class="headshot" style="text-align: center;">
 				<a href="" target="_blank">
-					<img src="people-pics/nathan.webp" alt="Advisor 2" style="height: 150px; width: 150px; object-fit: cover; border-radius: 50%;">
+					<img src="people-pics/anthony.jpg" alt="Advisor 2" style="height: 150px; width: 150px; object-fit: cover; border-radius: 50%;">
 				  </a>
 				<div class="roster-name">
-				  <b>Nathan Tsoi</b><br>
-				  Yale
+				  <b>Anthony Francis</b><br>
+				  Logical Robotics
 				</div>
 			  </div>
 
@@ -503,19 +507,7 @@
 		  -->
 
         <!-- About the Organizers -->
-        <section id="about-organizers">
-          <h2>🎯 About the Organizers</h2>
-          <hr/>
-          <ul>
-            <li><strong>Linh Kaestner</strong>: Lead developer of the <strong>Arena platform</strong> and expert in simulation environments for social navigation.</li>
-            <li><strong>Alex Doe</strong>: Specialist in dynamic robotics systems and advanced AI planning algorithms.</li>
-            <li><strong>Jamie Lee</strong>: Advisor and mentor, contributing to research strategies and evaluation frameworks.</li>
-            <li><strong>Samim Ahmadhi</strong>: Project manager overseeing timelines, communication, and partnership coordination.</li>
-            <li><strong>Jordan Smith</strong>: Responsible for event logistics, communications, and participant support.</li>
-          </ul>
-        </section>
-      </main>
-    </div>
+
 
     <section id="showcase2">
       <!-- Existing media content remains unchanged -->
